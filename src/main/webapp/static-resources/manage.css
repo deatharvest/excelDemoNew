@@ -1,0 +1,178 @@
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#global-menu .ui.topNav {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+}
+
+#global-menu .menu-logo-container {
+    line-height: 40px;
+}
+
+#global-menu .menu-logo-container > img{
+    max-height: 30px;
+    vertical-align: middle;
+}
+
+#left-menu {
+    border: 0;
+    float: left;
+    position: fixed;
+    text-align: right;
+    z-index: 999;
+    width: auto;
+    margin-top: 50px;
+}
+
+#left-menu .item{
+    padding: 0.46em 0.8em;
+}
+
+#left-menu .ui.vertical.menu{
+    width: auto;
+}
+
+span.complement:before{
+    content: '(';
+}
+span.complement{
+    margin-left: 5px;
+    font-size: 0.9em;
+    color: darkgray;
+}
+span.complement:after{
+    content: ')';
+}
+
+.operate-dashboard{
+    position: fixed;
+    bottom: 0;
+    padding: 1em;
+    background: white;
+}
+
+.delete-btn{
+    cursor: pointer;
+}
+.delete-btn:hover{
+    color: orangered;
+}
+
+.find-btn{
+    cursor: pointer;
+}
+.find-btn:hover{
+    color: #6d0877;
+}
+
+
+.manage-container {
+    padding: 50px 0 70px;
+}
+
+.audit-container img{
+    max-width: 100%;
+}
+
+.reject-reason-container .field{
+    float: left;
+}
+
+.reject-reason-container label {
+    min-width: 80px;
+}
+
+.business-tag-selector .jstree-anchor i.jstree-themeicon{
+    display: none !important;
+}
+
+.business-tag-selector .jstree-disabled i.jstree-checkbox{
+    display: none !important;
+}
+
+.avatar>img {
+    max-height: 8em;
+    border-radius: .3125em;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+@media (min-height: 320px) {
+    .ui.footer.form-page { /* Increased specificity for SO snippet priority */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.hide{
+    display: none;
+}
+
+.clear-booth{
+    clear: both;
+}
+.text-aligned.center{
+    text-align: center !important;
+}
+
+.text-aligned.left{
+    text-align: left !important;
+}
+
+.text-aligned.right{
+    text-align: right !important;
+}
+
+i.icon{
+    margin: 0;
+}
+
+.ui.container {
+    margin-top: 20px;
+}
+
+.dataTables_length, .dataTables_filter{
+    margin: 10px 0 5px;
+}
+
+.modal.product-select .dataTables_length, .modal.product-select .dataTables_info, .modal.product-select .dataTables_paginate{
+    display: none;
+}
+
+.modal.product-select table {
+    font-size: 0.8em;
+}
+
+.modal.product-select table .p-checkbox{
+    max-width: 100px;
+    width: 5em;
+    text-align: center;
+}
+
+.modal.product-select .dataTables_wrapper {
+    height: 400px;
+    overflow: scroll;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.ui.order.container{
+    width: 100%;
+    padding: 0 3em;
+}
+#intros .p-logo{
+    display: block;
+}

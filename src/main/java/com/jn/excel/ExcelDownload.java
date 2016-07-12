@@ -45,12 +45,6 @@ public class ExcelDownload {
         return list;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
-    public String hi(){
-        return "index";
-    }
-
-
 
 
     @RequestMapping(value = "excel")
@@ -99,47 +93,20 @@ public class ExcelDownload {
         }
         // 第六步，将文件存到指定位置
 
-        InputStream inputStream = null;
         OutputStream outputStream = null;
         try {
-            FileOutputStream fout = new FileOutputStream("D:/students.xls");
-            wb.
-            wb.write(fout);
-            fout.close();
-
-
-            File file = new File("D:/students.xls");
-
-            byte[] b = new byte[1024];
-            int len = 0;
-            inputStream = new FileInputStream(file);
             outputStream = response.getOutputStream();
-
             response.setContentType("application/force-download");
-            String filename = file.getName();
             response.setCharacterEncoding("utf-8");
             response.setContentType("application/vnd.ms-excel;charset=utf-8");
-            response.addHeader("Content-Disposition", "attachment; filename=" + URLEncoder.encode(filename, "UTF-8"));
-            response.setContentLength((int) file.length());
-            len = inputStream.read(b);
-
-
-            while ((len = inputStream.read(b)) != -1) {
-                outputStream.write(b, 0, len);
-            }
-
+            response.addHeader("Content-Disposition", "attachment; filename=" + URLEncoder.encode("hi.xls", "UTF-8"));
+            wb.write(outputStream);
+            outputStream.flush();
+            outputStream.close();
 
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if (inputStream != null) {
-                try {
-                    inputStream.close();
-                    inputStream = null;
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
             if (outputStream != null) {
                 try {
                     outputStream.close();

@@ -1,0 +1,57 @@
+body {
+    font-size: 12px;
+    text-align: left;
+}
+
+.input-text {
+    height: 23px;
+    width: 500px;
+    line-height: 23px;
+    vertical-align: middle;
+    background: #FAFBFD;
+    border: 1px solid #d4d4d4;
+}
+
+.file-uploader-wrap {
+    position: relative;
+    width: 405px;
+    height: 27px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.file-uploader-wrap-fake {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 27px;
+}
+
+.file-uploader-wrap .file-uploader {
+    position: relative;
+    width: 178px;
+    height: 27px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    _filter: none;
+    _text-align: left;
+    _line-height: 27px;
+}
+
+.file-uploader {
+    margin-top: 20px;
+}
+
+#PathDisplayer {
+    height: 40px;
+}
+
+div.button {
+    position: absolute;
+    top: 2px;
+    left: 180px;
+}
